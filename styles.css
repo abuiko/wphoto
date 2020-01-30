@@ -55,7 +55,7 @@ h3 {
     font-size: var(--header3);
 }
 
-h4 {
+h4, h5 {
     font-size: var(--header4);
 } 
 
@@ -134,6 +134,7 @@ nav {
 
 .hero-introduction p{
     padding: 5rem 10rem;
+    color: var(--gray-text);
 }
 
 
@@ -180,6 +181,7 @@ nav {
 
 
 
+
 /* Animations */
 
 @keyframes opening {
@@ -212,6 +214,57 @@ nav {
 .burger, .menu-check {
     display: none;
 }
+
+
+/* ABOUT SECTION */
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 2 1 40rem;
+    justify-content: space-around;
+    background: var(--background-color);
+    color: white;
+}
+
+.about-text div {
+    padding: 3rem 8rem;
+}
+
+.about-text h3 {
+    padding: 2rem 0rem;
+    font-family: "Ruhl Medium", sans-serif;
+}
+
+.about-text h2 {
+    font-family: "Vibes", sans-serif;
+    padding: 4rem;
+}
+
+.about-image {
+    flex:  1 1 40rem;
+    position: relative;
+}
+
+.about-image h5 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    letter-spacing: 2rem;
+}
+
+.about-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; 
+}
+
+
 
 
 /* MEDIA QUERY */
@@ -290,6 +343,10 @@ nav {
 
     }
 
-    /*  */
+     /*  */
+
+    .about-text div {
+        padding: 3rem 3rem;
+    }
 
 }
